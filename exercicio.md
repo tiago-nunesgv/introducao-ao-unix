@@ -2,17 +2,19 @@
 
 nome: Tiago Nunes
 
-1) Adicione um usuário com as seguintes características:
+##### 1)
 
-• Nome: Camila Silva
+- [x] Adicione um usuário com as seguintes características:
 
-• Login: csilva
+* Nome: Camila Silva
 
-• diretório home: /home/csilva
+* Login: csilva
 
-• shell padrão: /bin/bash
+* diretório home: /home/csilva
 
-• senha: mudar@123
+* shell padrão: /bin/bash
+
+* senha: mudar@123
 
 
 Resposta:
@@ -20,12 +22,14 @@ Resposta:
 ```
 $ sudo useradd -g contabilidade -s /bin/bash -d /home/csilva -c "Usuário Camila da contabilidade chegando na area!" -m csilva
 ```
-2. Verifique:
+##### 2)
 
-• se foi adicionado um linha referente a esse usuário no arquivo /etc/passwd e em
+- [x] Verifique:
+
+* se foi adicionado um linha referente a esse usuário no arquivo /etc/passwd e em
 /etc/group.
 
-• Se foi criado o diretório /home/csilva
+* Se foi criado o diretório /home/csilva
 
 Resposta:
 
@@ -35,25 +39,44 @@ $ vipw
 $ csilva:x:1001:, /home/csilva
 ```
 
-3. Alterar as seguintes características para o usuário csilva:
+##### 3)
 
-• Shell padrão: /bin/sh
+- [x] Alterar as seguintes características para o usuário csilva:
 
-• Senha: 123@mudar
+* Shell padrão: /bin/sh
 
-• Verifique se o shell padrão foi alterado em /etc/passwd para o usuário csilva
+* Senha: 123@mudar
+
+* Verifique se o shell padrão foi alterado em /etc/passwd para o usuário csilva
+
+Resposta:
+```
+$ sudo vipw
+
+$ csilva:x:1001:1002:Usuário Camila da contabilidade chegando na area!:/home/csilva:/bin/bash
+
+$ passwd csilva
+Digite a nova senha UNIX:
+Redigite a nova senha UNIX: 
+passwd: senha atualizada com sucesso
 ```
 
-```
 
+##### 4 
 
-4. Adicione um grupo chamado Contabilidade
+Adicione um grupo chamado Contabilidade
 
-5. Adicione o usuário csilva ao grupo Contabilidade
+##### 5 
 
-6. Exibir os grupos a qual usuário csilva está relacionado
+Adicione o usuário csilva ao grupo Contabilidade
 
-7. Ler arquivo 03_-_02 - Passwd e Shadow.pdf e resolver questões. (Enviar respostas em
+##### 6 
+
+Exibir os grupos a qual usuário csilva está relacionado
+
+##### 7
+
+Ler arquivo 03_-_02 - Passwd e Shadow.pdf e resolver questões. (Enviar respostas em
 um arquivo separado)
 
 -----------------------------------------------
@@ -66,10 +89,6 @@ vigr
 vipw
 
 su
-
-su csilva
-
-vipw
 
 su csilva
 
