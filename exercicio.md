@@ -1,10 +1,17 @@
 # introdução ao unix 
+
 nome: Tiago Nunes
+
 1) Adicione um usuário com as seguintes características:
+
 • Nome: Camila Silva
+
 • Login: csilva
+
 • diretório home: /home/csilva
+
 • shell padrão: /bin/bash
+
 • senha: mudar@123
 
 
@@ -14,8 +21,10 @@ Resposta:
 $ sudo useradd -g contabilidade -s /bin/bash -d /home/csilva -c "Usuário Camila da contabilidade chegando na area!" -m csilva
 ```
 2. Verifique:
+
 • se foi adicionado um linha referente a esse usuário no arquivo /etc/passwd e em
 /etc/group.
+
 • Se foi criado o diretório /home/csilva
 
 Resposta:
@@ -27,8 +36,11 @@ $ csilva:x:1001:, /home/csilva
 ```
 
 3. Alterar as seguintes características para o usuário csilva:
+
 • Shell padrão: /bin/sh
+
 • Senha: 123@mudar
+
 • Verifique se o shell padrão foi alterado em /etc/passwd para o usuário csilva
 ```
 
