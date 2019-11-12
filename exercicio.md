@@ -6,8 +6,13 @@ nome: Tiago Nunes
 • diretório home: /home/csilva
 • shell padrão: /bin/bash
 • senha: mudar@123
-R:para esxecutar estas  atividades fizemos o seguinte comondo: sudo useradd -U -p 123 -s /home/csilva csilva
 
+
+Resposta:
+
+```
+$ sudo useradd -g contabilidade -s /bin/bash -d /home/csilva -c "Usuário Camila da contabilidade chegando na area!" -m csilva
+```
 2. Verifique:
 • se foi adicionado um linha referente a esse usuário no arquivo /etc/passwd e em
 /etc/group.
