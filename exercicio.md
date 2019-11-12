@@ -74,11 +74,6 @@ Adicione o usuário csilva ao grupo Contabilidade
 
 Exibir os grupos a qual usuário csilva está relacionado
 
-##### 7
-
-Ler arquivo 03_-_02 - Passwd e Shadow.pdf e resolver questões. (Enviar respostas em
-um arquivo separado)
-
 -----------------------------------------------
 
 Comandos usados:
