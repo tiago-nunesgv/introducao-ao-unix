@@ -53,7 +53,7 @@ Resposta:
 ```
 $ sudo vipw
 
-$ csilva:x:1001:1002:Usuário Camila da contabilidade chegando na area!:/home/csilva:/bin/bash
+$ csilva:x:1001:1002:Usuário Camila da contabilidade chegando na area!:/home/csilva:/bin/sh
 
 $ passwd csilva
 Digite a nova senha UNIX:
@@ -66,13 +66,26 @@ passwd: senha atualizada com sucesso
 
 Adicione um grupo chamado Contabilidade
 
+```
+$ groupadd Contabilidade 
+
+```
 ##### 5 
 
 Adicione o usuário csilva ao grupo Contabilidade
 
+```
+$ groupadd csilva Contabilidade 
+
+```
+
 ##### 6 
 
 Exibir os grupos a qual usuário csilva está relacionado
+
+```
+$ csilva:x:1001:1002:Usuário Camila da contabilidade chegando na area!:/home/csilva:/bin/bash
+```
 
 -----------------------------------------------
 
@@ -98,5 +111,8 @@ usermod
 addgroup csilva contabilidade
 
 grupos do sistema
+
 cat /etc/group | cut -d: -f1
+
+less /etc/group 
 ```
