@@ -62,7 +62,7 @@ passwd: senha atualizada com sucesso
 ```
 
 
-##### 4 
+##### 4)
 
 Adicione um grupo chamado Contabilidade
 
@@ -70,7 +70,7 @@ Adicione um grupo chamado Contabilidade
 $ groupadd Contabilidade 
 
 ```
-##### 5 
+##### 5)
 
 Adicione o usuário csilva ao grupo Contabilidade
 
@@ -79,7 +79,7 @@ $ groupadd csilva Contabilidade
 
 ```
 
-##### 6 
+##### 6)
 
 Exibir os grupos a qual usuário csilva está relacionado
 
