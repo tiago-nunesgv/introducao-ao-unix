@@ -20,7 +20,7 @@ Opções:
 -g - Especifica o grupo do usuário.
 -c - Inclui um comentário referente ao usuário, tais como nome, setor, etc
 -s - Especifica o shell de comando que o usuário irá utilizar.
--m - Cria o diretório home do usuário e copia os arquivos de /etc/skel/ para o home criado (diretório onde se encontram os arquivos default do usuário, futuramente iremos falar sobre ele). Em algumas distribuições não há necessidade de incluirmos essa opção para a criação do home, mas para evitarmos não o criarmos é bom acostumarmos a colocá-la na criação do usuário.
+-m - Cria o diretório home do usuário e copia os arquivos de /etc/skel/ para o home criado (diretório onde se encontram os arquivos default do usuário). Em algumas distribuições não há necessidade de incluirmos essa opção para a criação do home, mas para evitarmos não o criarmos é bom acostumarmos a colocá-la na criação do usuário.
 -p - Essa opção serve para especificarmos uma senha já criptografada para o usuário.
 
 
