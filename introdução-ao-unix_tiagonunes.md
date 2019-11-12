@@ -4,11 +4,17 @@ Uma das coisas que torna seguro o sistema operacional GNU/Linux (na verdade, qua
 
 ## Comandos:
 + useradd: Comando utilizado para criação de um usuário.
+
 + userdel: Comando utilizado para remoção de um usuário.
+
 + usermod: Comando usado para modificar os dados de um usuário.
+
 + passwd: Comando usado para definir e ou modificar a senha de um usuário.
+
 + groupadd: Comando usado para criar um grupo.
+
 + groupdel: Comando usado para remover um grupo.
+
 + groupmod: Comando usado para modificar os dados de um grupo.
 
 CRIANDO UM USUÁRIO
@@ -19,10 +25,15 @@ Sintaxe: useradd [opções] <username>
 
 Opções:
 -d - Caminho do diretório home do usuário.
+
 -g - Especifica o grupo do usuário.
+
 -c - Inclui um comentário referente ao usuário, tais como nome, setor, etc
+
 -s - Especifica o shell de comando que o usuário irá utilizar.
+
 -m - Cria o diretório home do usuário e copia os arquivos de /etc/skel/ para o home criado (diretório onde se encontram os arquivos default do usuário). Em algumas distribuições não há necessidade de incluirmos essa opção para a criação do home, mas para evitarmos não o criarmos é bom acostumarmos a colocá-la na criação do usuário.
+
 -p - Essa opção serve para especificarmos uma senha já criptografada para o usuário.
 
 
@@ -34,9 +45,13 @@ COMANDO PASSWD
 Sintaxe: passwd [opções] <username>
 
 # Opções:
+
 -d - Permite o usuário acessar (logar) o sistema sem senha.
+
 -l - Bloqueia/trava a conta do usuário. O usuário não consegue logar.
+
 -u - Desbloqueia/destrava a contado usuário (bloqueado pela opção "-l").
+
 -S - Mostra o status da senha do usuário.
 
 # Exemplo 1:
@@ -58,10 +73,15 @@ passwd -u sup1
 Sintaxe: usermod [opções] <username>
 
 Opções:
+
 -d - Modifica o caminho do diretório home do usuário.
+
 -g - Modifica o grupo do usuário.
+
 -c - Modifica o comentário referente ao usuário.
+
 -s - Modifica o Shell de comando que o usuário irá utilizar.
+
 -p - Substitui a senha já criptografada do usuário.
 
 # Exemplo 1: Nesse exemplo estamos modificando o grupo e o comentário do usuário sup1 ao mesmo tempo.
@@ -100,7 +120,9 @@ groupadd -g 1521 oragroup
 Sintaxe: groupmod [opções] <groupname>
 
 Opção:
+
 -g - Ao usarmos esta opção, podemos modificar o GID do grupo.
+
 -n - Para trocarmos o nome do grupo.
 
 Exemplo 1: Modificando o GID do grupo "administracao".
@@ -147,9 +169,16 @@ $ vigr
 /etc/skel - Neste diretório são armazenados arquivos, por padrão ocultos (arquivos que iniciam com um ".") , que são copiados para o diretório HOME do usuário no momento da criação do usuário. Se precisarmos incluir alguma configuração padrão, podemos usar esse diretório para incluir ou até mesmo editar os arquivos existentes e consequentemente fazer o ajuste a suas necessidades.
 
 # Arquivos:
-/etc/passwd - Arquivo que contém várias informações sobre o usuário. Ele é utilizado por vários comandos de sistema e aplicações. Antigamente até mesmo as senhas eram armazenadas nele, porém a algum tempo as senhas estão sendo armazenadas em /etc/shadow, arquivo que falaremos a seguir. Só o administrador do sistema consegue modificar esse arquivo.
+/etc/passwd - Arquivo que contém várias informações sobre o usuário. Ele é utilizado por vários comandos de sistema e aplicações. Antigamente até mesmo as senhas eram armazenadas nele, porém a algum tempo as senhas estão sendo armazenadas em 
+
+/etc/shadow, arquivo que falaremos a seguir. Só o administrador do sistema consegue modificar esse arquivo.
+
 /etc/shadow - Onde estão armazenadas as senhas criptografadas dos usuários, além de outras informações como expiração da senha etc.
+
 /etc/gshadow - Tem a mesma finalidade do /etc/shadow, só que para grupos e não usuários.
+
 /etc/group - É onde se encontram os grupos existentes no sistema. Cada grupo pode estar associado a vários usuários, este arquivo também é responsável por esta associação.
+
 /etc/motd - Esse arquivo contém as informações que serão exibidas após o login do usuário.
+
 /etc/default/useradd e /etc/login.defs - Arquivos onde se encontram as configurações default de criação de usuários. As configurações podem ser diferentes dependendo de cada "distro", umas por exemplo, não há a necessidade da opção "-m" para a criação do diretório HOME do usuário.
