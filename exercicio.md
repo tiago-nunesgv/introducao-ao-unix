@@ -183,10 +183,11 @@ $ vigr
 
 /etc/default/useradd e /etc/login.defs - Arquivos onde se encontram as configurações default de criação de usuários. As configurações podem ser diferentes dependendo de cada "distro", umas por exemplo, não há a necessidade da opção "-m" para a criação do diretório HOME do usuário.
 
+===============================
 
 
-
-# [introdução ao unix]
+introdução ao unix
+==========
 
 nome: Tiago Nunes
 
