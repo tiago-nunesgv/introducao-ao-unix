@@ -1,14 +1,14 @@
 # Tutorial
 
-<p align="center">
 Uma das coisas que torna seguro o sistema operacional GNU/Linux (na verdade, qualquer sistema baseado no Unix), é a sua exigência de que cada coisa tenha dono e permissões de uso [site](https://tiagotgv.github.io/introducao-ao-unix/).
+<br/>
 
-Por que criar usuários no GNU/Linux? Criar uma conta para cada usuário no sistema operacional não serve apenas para restringir ou permitir o acesso aos recursos oferecidos, mas também para respeitar o espaço que cada pessoa tem. Com uma conta, uma pessoa poderá ter os seus próprios diretórios, personalizar o seu desktop, ter atalhos e configurações para os seus programas preferidos, entre outros. 
+Por que criar usuários no GNU/Linux? Criar uma conta para cada usuário no sistema operacional não serve apenas para restringir ou permitir o acesso aos recursos oferecidos, mas também para respeitar o espaço que cada pessoa tem. Com uma conta, uma pessoa poderá ter os seus próprios diretórios, personalizar o seu desktop, ter atalhos e configurações para os seus programas preferidos, entre outros.<br/>
 
-Além disso, mesmo que o computador onde o GNU/Linux está instalado seja usado apenas por uma pessoa, é recomendável criar um usuário próprio para ela. 
+Além disso, mesmo que o computador onde o GNU/Linux está instalado seja usado apenas por uma pessoa, é recomendável criar um usuário próprio para ela.<br/>
 
 Mas, por qual motivo, se o sistema já conta com um usuário nativo, o root? O usuário root é o que "manda" no sistema, pois ele tem poderes de administrador, o que significa que ele tem acesso a todos os recursos do sistema operacional. Usá-lo no dia-a-dia não é recomendável, pois se o computador for tomado por outra pessoa ou se o próprio usuário fizer alguma coisa errada, o sistema operacional poderá ser seriamente comprometido. 
-</p>
+
 
 ## Comandos:
 
