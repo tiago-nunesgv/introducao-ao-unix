@@ -1,7 +1,7 @@
 # Tutorial
 
 <div align="left">
-Uma das coisas que torna seguro o sistema operacional GNU/Linux (na verdade, qualquer sistema baseado no Unix), é a sua exigência de que cada coisa tenha dono e permissões de uso [site](https://tiagotgv.github.io/introducao-ao-unix/).
+Uma das coisas que torna seguro o sistema operacional GNU/Linux (na verdade, qualquer sistema baseado no Unix), é a sua exigência de que cada coisa tenha dono e permissões de uso.
 
 Por que criar usuários no GNU/Linux? Criar uma conta para cada usuário no sistema operacional não serve apenas para restringir ou permitir o acesso aos recursos oferecidos, mas também para respeitar o espaço que cada pessoa tem. Com uma conta, uma pessoa poderá ter os seus próprios diretórios, personalizar o seu desktop, ter atalhos e configurações para os seus programas preferidos, entre outros.<br/>
 
